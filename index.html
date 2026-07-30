@@ -3,66 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Asrafull Islam | Professional Bookkeeper</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <style>
+
+/* CSS PART 1 */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7fb;
+
+background:#f4f8fc;
+
 color:#333;
+
 }
 
 header{
-background:#0b3d91;
+
+background:#0B4F9C;
+
 color:white;
-padding:60px 20px;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:700;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD54F;
+
+}
+
+.hero{
+
+padding:160px 8% 100px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-text{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.hero-text h3{
+
+font-size:25px;
+
+color:#0B4F9C;
+
+}
+
+.hero-text h1{
+
+font-size:60px;
+
+margin:10px 0;
+
+}
+
+.hero-text h2{
+
+font-size:28px;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+line-height:1.8;
+
+font-size:18px;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 34px;
+
+background:#0B4F9C;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.4s;
+
+margin-right:15px;
+
+}
+
+.btn:hover{
+
+background:#082d5b;
+
+transform:translateY(-4px);
+
+}
+
+.hero-image{
+
+flex:1;
+
 text-align:center;
+
+min-width:320px;
+
 }
 
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
+.hero-image img{
 
-header p{
-font-size:20px;
+width:360px;
+
+height:360px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
+
+padding:90px 8%;
+
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-margin-bottom:30px;
-}
+.title{
 
-h2{
-color:#0b3d91;
-margin-bottom:20px;
-}
-
-ul{
-padding-left:20px;
-}
-
-footer{
-background:#0b3d91;
-color:white;
 text-align:center;
-padding:20px;
+
+font-size:42px;
+
+margin-bottom:50px;
+
+color:#0B4F9C;
+
 }
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+
+border-radius:20px;
+
+}
+
+.about-text p{
+
+line-height:2;
+
+font-size:17px;
+
+}
+
 </style>
 
 </head>
@@ -71,76 +256,529 @@ padding:20px;
 
 <header>
 
-<h1>Asrafull Islam</h1>
+<div class="logo">
 
-<p>Professional Bookkeeper | QuickBooks ProAdvisor | Xero Certified</p>
+Asrafull
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
 
 </header>
 
-<section>
+<section class="hero">
 
-<div class="card">
+<div class="hero-text">
 
-<h2>About Me</h2>
+<h3>Hello I'm</h3>
+
+<h1>Asrafull Islam</h1>
+
+<h2>Professional Bookkeeper</h2>
 
 <p>
-I am a professional bookkeeper experienced in QuickBooks Online, Xero,
-Microsoft Excel, Financial Reporting and Accounting.
+
+QuickBooks Online ProAdvisor • Xero Advisor •
+Bookkeeping • Payroll • Bank Reconciliation •
+Financial Reporting • Microsoft Excel
+
 </p>
 
-</div>
+<a href="#contact" class="btn">
 
-<div class="card">
+Hire Me
 
-<h2>Skills</h2>
+</a>
 
-<ul>
+<a href="#" class="btn">
 
-<li>QuickBooks Online</li>
+Download CV
 
-<li>Xero Accounting</li>
-
-<li>Microsoft Excel</li>
-
-<li>Bookkeeping</li>
-
-<li>Payroll</li>
-
-<li>Bank Reconciliation</li>
-
-</ul>
+</a>
 
 </div>
 
-<div class="card">
+<div class="hero-image">
 
-<h2>Certificates</h2>
-
-<p>✔ National Skill Standard Basic Course</p>
-
-<p>✔ QuickBooks ProAdvisor</p>
-
-<p>✔ Xero Certification</p>
-
-</div>
-
-<div class="card">
-
-<h2>Contact</h2>
-
-<p>Email: your@email.com</p>
-
-<p>Phone: +8801XXXXXXXXX</p>
+<img src="profile.jpg">
 
 </div>
 
 </section>
 
+<section id="about">
+
+<h2 class="title">
+
+About Me
+
+</h2>
+
+<div class="about">
+
+<div>
+
+<img src="profile.jpg">
+
+</div>
+
+<div class="about-text">
+
+<p>
+
+I am a Professional Bookkeeper specializing in
+QuickBooks Online, Xero Accounting, Payroll,
+Bank Reconciliation, Financial Reporting,
+Accounts Payable & Receivable and Microsoft Excel.
+
+I help businesses maintain accurate financial
+records and make better financial decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- SERVICES SECTION START -->
+<!-- ========================= -->
+
+<section id="services">
+
+<h2 class="title">My Services</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<i class="fas fa-book"></i>
+<h3>Bookkeeping</h3>
+<p>Professional bookkeeping for small businesses with accurate financial records.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-calculator"></i>
+<h3>QuickBooks Online</h3>
+<p>QuickBooks setup, cleanup, categorization, reconciliation and reporting.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-chart-line"></i>
+<h3>Xero Accounting</h3>
+<p>Certified Xero bookkeeping, payroll and financial reporting services.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-university"></i>
+<h3>Bank Reconciliation</h3>
+<p>Monthly reconciliation ensuring every transaction is accurate.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-money-check-alt"></i>
+<h3>Payroll</h3>
+<p>Employee payroll processing with accuracy and compliance.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-file-invoice-dollar"></i>
+<h3>Financial Reports</h3>
+<p>Profit & Loss, Balance Sheet and Cash Flow reports.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SKILLS SECTION -->
+<!-- ========================= -->
+
+<section id="skills">
+
+<h2 class="title">Professional Skills</h2>
+
+<div class="skill">
+
+<p>QuickBooks Online</p>
+<div class="bar">
+<div class="fill" style="width:95%">95%</div>
+</div>
+
+<p>Xero Accounting</p>
+<div class="bar">
+<div class="fill" style="width:90%">90%</div>
+</div>
+
+<p>Bookkeeping</p>
+<div class="bar">
+<div class="fill" style="width:98%">98%</div>
+</div>
+
+<p>Microsoft Excel</p>
+<div class="bar">
+<div class="fill" style="width:92%">92%</div>
+</div>
+
+<p>Payroll Processing</p>
+<div class="bar">
+<div class="fill" style="width:90%">90%</div>
+</div>
+
+<p>Financial Reporting</p>
+<div class="bar">
+<div class="fill" style="width:94%">94%</div>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.service-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.service-box{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.service-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-box i{
+
+font-size:55px;
+
+color:#0B4F9C;
+
+margin-bottom:20px;
+
+}
+
+.service-box h3{
+
+margin-bottom:15px;
+
+}
+
+.skill{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.skill p{
+
+font-weight:600;
+
+margin-top:20px;
+
+}
+
+.bar{
+
+background:#ddd;
+
+height:18px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+margin-top:8px;
+
+}
+
+.fill{
+
+height:100%;
+
+background:#0B4F9C;
+
+color:#fff;
+
+text-align:right;
+
+padding-right:10px;
+
+line-height:18px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+</style>
+<!-- ========================= -->
+<!-- EXPERIENCE SECTION -->
+<!-- ========================= -->
+
+<section id="experience">
+
+<h2 class="title">Experience</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>Professional Bookkeeper</h3>
+<p><strong>Freelance</strong></p>
+<p>Providing bookkeeping services using QuickBooks Online and Xero for businesses worldwide.</p>
+</div>
+
+<div class="service-box">
+<h3>Accounting & Reporting</h3>
+<p>Preparing Profit & Loss, Balance Sheet, Cash Flow Statement and Financial Reports.</p>
+</div>
+
+<div class="service-box">
+<h3>Bank Reconciliation</h3>
+<p>Monthly bank and credit card reconciliation with accurate bookkeeping records.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CERTIFICATES -->
+<!-- ========================= -->
+
+<section id="certificates">
+
+<h2 class="title">Certificates</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>QuickBooks ProAdvisor</h3>
+<p>Certified QuickBooks Online ProAdvisor.</p>
+</div>
+
+<div class="service-box">
+<h3>Xero Advisor Certification</h3>
+<p>Certified Xero Advisor with cloud accounting expertise.</p>
+</div>
+
+<div class="service-box">
+<h3>Microsoft Excel</h3>
+<p>Advanced Excel for Accounting & Financial Reporting.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- EDUCATION -->
+<!-- ========================= -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>Master of Accounting</h3>
+<p>Accounting</p>
+</div>
+
+<div class="service-box">
+<h3>Bachelor of Business Studies (BBS)</h3>
+<p>Accounting</p>
+</div>
+
+<div class="service-box">
+<h3>Higher Secondary Certificate (HSC)</h3>
+<p>Business Studies</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROJECTS -->
+<!-- ========================= -->
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>QuickBooks Cleanup Project</h3>
+<p>Cleaned and organized bookkeeping records for a small business.</p>
+</div>
+
+<div class="service-box">
+<h
+<!-- ========================= -->
+<!-- CONTACT SECTION -->
+<!-- ========================= -->
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="service-box" style="max-width:700px;margin:auto;">
+
+<p><strong>Name:</strong> Asrafull Islam</p>
+
+<p><strong>Email:</strong> asrafullbookkeeping@gmail.com</p>
+
+<p><strong>Phone:</strong> +8801732562508</p>
+
+<p><strong>Profession:</strong> Professional Bookkeeper</p>
+
+<br>
+
+<a href="mailto:asrafullbookkeeping@gmail.com" class="btn">Email Me</a>
+
+<a href="https://wa.me/8801732562508" target="_blank" class="btn">WhatsApp</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SOCIAL LINKS -->
+<!-- ========================= -->
+
+<section id="social">
+
+<h2 class="title">Connect With Me</h2>
+
+<div style="text-align:center;">
+
+<a class="social-btn" href="https://www.facebook.com/asrafull.islambsl" target="_blank">Facebook</a>
+
+<a class="social-btn" href="https://github.com/Asrafullbookkeeping" target="_blank">GitHub</a>
+
+<a class="social-btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+<a class="social-btn" href="https://www.fiverr.com/" target="_blank">Fiverr</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
 <footer>
 
-© 2026 Asrafull Islam | All Rights Reserved
+<h3>Asrafull Islam</h3>
+
+<p>Professional Bookkeeper | QuickBooks ProAdvisor | Xero Certified</p>
+
+<p>Email: asrafullbookkeeping@gmail.com</p>
+
+<p>Phone: +8801732562508</p>
+
+<p>© 2026 Asrafull Islam. All Rights Reserved.</p>
 
 </footer>
 
-</body>
-</html>
+<style>
+
+.btn{
+
+display:inline-block;
+
+padding:12px 28px;
+
+margin:10px;
+
+background:#0B4F9C;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#063970;
+
+}
+
+.social-btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+margin:12px;
+
+background:#ffffff;
+
+color:#0B4F9C;
+
+border:2px solid #0B4F9C;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.social-btn:hover{
+
+background:#0B4
